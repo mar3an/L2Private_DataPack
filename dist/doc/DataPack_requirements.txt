@@ -1,0 +1,15 @@
+Database Requirements:
+---------------------- 
+
+---------------------- 
+MySQL Installer 5.7.37
+---------------------- 
+ 
+https://dev.mysql.com/downloads/windows/installer/5.7.html
+
+
+---------------------- 
+Navicat for MySQL
+---------------------- 
+
+https://www.navicat.com/en/download/navicat-for-mysql
