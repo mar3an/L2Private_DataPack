@@ -18,6 +18,9 @@
  */
 package instances;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import instances.CavernOfThePirateCaptain.CavernOfThePirateCaptain;
 import instances.ChambersOfDelusion.ChamberOfDelusionEast;
 import instances.ChambersOfDelusion.ChamberOfDelusionNorth;
@@ -45,10 +48,8 @@ import instances.NornilsGarden.NornilsGarden;
 import instances.NornilsGardenQuest.NornilsGardenQuest;
 import instances.PailakaDevilsLegacy.PailakaDevilsLegacy;
 import instances.PailakaSongOfIceAndFire.PailakaSongOfIceAndFire;
+import instances.RimKamaloka.RimKamaloka;
 import instances.SanctumOftheLordsOfDawn.SanctumOftheLordsOfDawn;
-
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  * Instance class-loader.
@@ -87,6 +88,7 @@ public final class InstanceLoader
 		NornilsGardenQuest.class,
 		PailakaDevilsLegacy.class,
 		PailakaSongOfIceAndFire.class,
+		RimKamaloka.class,
 		SanctumOftheLordsOfDawn.class,
 	};
 	
