@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instance name="RimKamaloka" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/instance.xsd">
+	<activityTime val="10" />
+	<allowSummon val="false" />
+	<showTimer val="true" increase="true" text="Elapsed Time :" />
+</instance>
