@@ -67,7 +67,7 @@ public class Q00288_HandleWithCare extends Quest
 	@Override
 	public String onAdvEvent(String event, L2Npc npc, L2PcInstance player)
 	{
-		final QuestState st = getQuestState(player, false);
+		final QuestState st = player.getQuestState(getName());
 		if (st == null)
 		{
 			return null;
@@ -165,7 +165,7 @@ public class Q00288_HandleWithCare extends Quest
 	@Override
 	public String onKill(L2Npc npc, L2PcInstance killer, boolean isSummon)
 	{
-		final QuestState st = getQuestState(killer, false);
+		final QuestState st = killer.getQuestState(getName());
 		if ((st != null) && st.isCond(1) && Util.checkIfInRange(1500, npc, killer, false))
 		{
 			if (!st.hasQuestItems(MIDDLE_GRADE_LIZARD_SCALE))
@@ -208,8 +208,7 @@ public class Q00288_HandleWithCare extends Quest
 				{
 					htmltext = "32741-06.html";
 				}
-				
-				if (st.isCond(2) && st.hasQuestItems(HIGH_GRADE_LIZARD_SCALE))
+				else if (st.isCond(3) && st.hasQuestItems(HIGH_GRADE_LIZARD_SCALE))
 				{
 					htmltext = "32741-07.html";
 				}
